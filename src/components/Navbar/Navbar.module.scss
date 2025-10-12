@@ -1,16 +1,29 @@
+@keyframes activateLink {
+  0% {
+  }
+  100% {
+    color: white;
+    background-color: rgb(2, 29, 41);
+  }
+}
+
+.nav-link.active {
+  animation: activateLink 0.5s ease-in-out forwards;
+}
+
 .navbar {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  margin: 1rem;
 
   .logo {
     background-image: url("../../assets/LogoAPTblack.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 1rem;
+    padding: 3rem;
     height: 100%;
     width: 20%;
   }
@@ -20,5 +33,16 @@
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+
+    a {
+      padding: 1rem;
+      border-radius: 0.8rem;
+      outline: none;
+    }
+
+    .active {
+      color: white;
+      animation: activateLink 0.2s ease-in-out forwards;
+    }
   }
 }

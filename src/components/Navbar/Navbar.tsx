@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
@@ -8,13 +8,28 @@ const Navbar: React.FC = () => {
       <div className={styles.logo}></div>
       <ul>
         <li>
-          <Link to={"/"}>Strona Główna</Link>
+          <NavLink
+            to={"/"}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Strona Główna
+          </NavLink>
         </li>
         <li>
-          <Link to={"/apartments"}>Apartamenty</Link>
+          <NavLink
+            to={"/apartments"}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Apartamenty
+          </NavLink>
         </li>
         <li>
-          <Link to={"/contact"}>Kontakt</Link>
+          <NavLink
+            to={"/contact"}
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Kontakt
+          </NavLink>
         </li>
       </ul>
     </nav>

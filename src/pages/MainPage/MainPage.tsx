@@ -1,11 +1,13 @@
 import React from "react";
-import styles from "./MainPage.module.scss";
+import Hero from "../../sections/MainPage/Hero/Hero";
+import Benefits from "../../sections/MainPage/Benefits/Benefits";
 
 const Main: React.FC = () => {
   return (
-    <div className={styles.main}>
-      <h1>Main Page</h1>
-    </div>
+    <>
+      <Hero />
+      <Benefits />
+    </>
   );
 };
 
