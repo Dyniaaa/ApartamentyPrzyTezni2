@@ -1,0 +1,52 @@
+.about {
+  background-color: rgb(218, 218, 229);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 5rem 0rem;
+  max-height: 75vh;
+
+  .textContainer {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+
+    h1 {
+      padding: 2rem 0rem;
+      font-weight: 400;
+    }
+
+    p {
+      padding: 0.5rem 0rem;
+    }
+
+    div {
+      padding: 0.2rem 0rem;
+      display: flex;
+
+      &:first-of-type {
+        padding-top: 1rem;
+      }
+
+      .iconText {
+        padding-left: 0.5rem;
+        font-size: 0.9rem;
+        align-self: center;
+      }
+    }
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+
+    img {
+      border-radius: 15px;
+      height: 110%;
+    }
+  }
+}
