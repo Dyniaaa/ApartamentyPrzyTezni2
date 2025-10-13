@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./ApartamentCard.module.scss";
-import peopleIcon from "../../assets/icons/people.svg";
-import bedIcon from "../../assets/icons/bed.svg";
-import bathroomIcon from "../../assets/icons/bath.svg";
+import peopleIcon from "../../assets/Icons/people.svg";
+import bedIcon from "../../assets/Icons/bed.svg";
+import bathroomIcon from "../../assets/Icons/bath.svg";
 
 type ApartamentCardProps = {
   description: string;
