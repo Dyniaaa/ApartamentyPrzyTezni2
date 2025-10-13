@@ -3,6 +3,7 @@ import styles from "./ApartamentCard.module.scss";
 import peopleIcon from "../../assets/Icons/people.svg";
 import bedIcon from "../../assets/Icons/bed.svg";
 import bathroomIcon from "../../assets/Icons/bath.svg";
+import { NavLink } from "react-router-dom";
 
 type ApartamentCardProps = {
   description: string;
@@ -13,6 +14,7 @@ type ApartamentCardProps = {
   amountPeople: string;
   amountBed: string;
   amountBathrooms: string;
+  link: string;
 };
 
 const ApartamentCard: React.FC<ApartamentCardProps> = ({
@@ -24,6 +26,7 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
   amountPeople,
   amountBed,
   amountBathrooms,
+  link,
 }) => {
   return (
     <div className={styles.ApartamentCard}>
@@ -52,6 +55,9 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
           <p>{amountBathrooms}&nbsp;łazienka</p>
         </div>
       </div>
+      <NavLink className={styles.navLink} to={link}>
+        Zobacz szczegóły
+      </NavLink>
     </div>
   );
 };

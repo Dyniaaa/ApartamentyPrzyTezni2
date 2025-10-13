@@ -82,4 +82,19 @@
       }
     }
   }
+
+  .navLink {
+    text-align: center;
+    width: 90%;
+    background-color: rgb(2, 29, 41);
+    color: white;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    outline: none;
+
+    &:hover {
+      background-color: rgb(4, 40, 57);
+    }
+  }
 }
