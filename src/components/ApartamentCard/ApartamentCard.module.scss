@@ -1,0 +1,85 @@
+@keyframes fadeIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+.ApartamentCard:hover {
+  box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  .mainPhoto {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+}
+.ApartamentCard {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 1rem;
+  border: 1px solid rgb(218, 218, 229);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .photoDiv {
+    overflow: hidden;
+
+    .mainPhoto {
+      aspect-ratio: 16 / 10;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+  }
+
+  .titleDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+
+    h1 {
+      font-weight: 400;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .perNight {
+        color: rgb(108, 108, 108);
+        text-align: right;
+      }
+    }
+  }
+
+  .description {
+    color: rgb(108, 108, 108);
+    padding: 0 1rem;
+  }
+
+  .iconsDiv {
+    display: flex;
+    padding: 1.5rem 1rem;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
+
+      .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      p {
+        margin-left: 0.4rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
