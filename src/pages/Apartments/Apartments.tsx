@@ -1,7 +1,12 @@
 import React from "react";
+import Title from "../../sections/Apartments/Title/title";
 
 const Apartments: React.FC = () => {
-  return <></>;
+  return (
+    <>
+      <Title />
+    </>
+  );
 };
 
 export default Apartments;
