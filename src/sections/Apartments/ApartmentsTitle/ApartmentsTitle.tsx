@@ -1,9 +1,9 @@
 import React from "react";
-import style from "./title.module.scss";
+import style from "./ApartmentsTitle.module.scss";
 
-const Title: React.FC = () => {
+const ApartmentsTitle: React.FC = () => {
   return (
-    <section className={style.title}>
+    <section className={style.apartmentsTitle}>
       <h1>Nasze Apartamenty</h1>
       <p>
         Wybierz spośród 7 wyjątkowych apartamentów, każdy z unikalnym
@@ -14,4 +14,4 @@ const Title: React.FC = () => {
   );
 };
 
-export default Title;
+export default ApartmentsTitle;

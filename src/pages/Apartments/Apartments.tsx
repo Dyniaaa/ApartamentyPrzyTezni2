@@ -1,12 +1,12 @@
 import React from "react";
-import Title from "../../sections/Apartments/Title/Title.tsx";
+import ApartmentsTitle from "../../sections/Apartments/ApartmentsTitle/ApartmentsTitle.tsx";
 import ApartmentsGrid from "../../sections/Apartments/ApartmentsGrid/ApartmentsGrid";
 import Help from "../../sections/Apartments/Help/Help.tsx";
 
 const Apartments: React.FC = () => {
   return (
     <>
-      <Title />
+      <ApartmentsTitle />
       <ApartmentsGrid />
       <Help />
     </>
