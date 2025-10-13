@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to={"/apartments"}
+            to={"/Apartments"}
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Apartamenty
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         </li>
         <li>
           <NavLink
-            to={"/contact"}
+            to={"/Contact"}
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Kontakt

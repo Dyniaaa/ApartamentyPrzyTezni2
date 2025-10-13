@@ -1,7 +1,7 @@
 import React from "react";
 
-const Apartments: React.FC = () => {
+const ApartmentDetail: React.FC = () => {
   return <></>;
 };
 
-export default Apartments;
+export default ApartmentDetail;

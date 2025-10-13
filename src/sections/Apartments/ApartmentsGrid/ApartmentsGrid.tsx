@@ -21,6 +21,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament0.1"
       />
       <ApartamentCard
         photoUrl={mainPhoto02}
@@ -31,6 +32,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament0.2"
       />
       <ApartamentCard
         photoUrl={mainPhoto21}
@@ -41,6 +43,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament2.1"
       />
       <ApartamentCard
         photoUrl={mainPhoto22}
@@ -51,6 +54,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament2.2"
       />
       <ApartamentCard
         photoUrl={mainPhoto23}
@@ -61,6 +65,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament2.3"
       />
       <ApartamentCard
         photoUrl={mainPhoto31}
@@ -71,6 +76,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament3.1"
       />
       <ApartamentCard
         photoUrl={mainPhoto32}
@@ -81,6 +87,7 @@ const ApartmentsGrid: React.FC = () => {
         amountPeople="4"
         amountBed="2"
         amountBathrooms="1"
+        link="/Apartament3.2"
       />
     </section>
   );
