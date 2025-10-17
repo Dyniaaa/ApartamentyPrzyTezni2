@@ -1,3 +1,43 @@
 .apartmentDetailTitle {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+
+  .nameAndLoctionDiv {
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    .locationDiv {
+      display: flex;
+      margin: 0.5rem 0;
+
+      img {
+        margin-right: 1rem;
+      }
+
+      p {
+        &:last-of-type {
+          margin-left: 1.5rem;
+          background-color: rgb(225, 225, 225);
+          border-radius: 0.5rem;
+          padding: 0 0.5rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .priceDiv {
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      text-align: end;
+    }
+  }
 }

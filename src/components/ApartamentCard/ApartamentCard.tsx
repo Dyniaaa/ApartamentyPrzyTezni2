@@ -11,9 +11,9 @@ type ApartamentCardProps = {
   altPhoto: string;
   photoUrl: string;
   price: string;
-  amountPeople: string;
-  amountBed: string;
-  amountBathrooms: string;
+  amountPeople: number;
+  amountBed: number;
+  amountBathrooms: number;
   link: string;
 };
 

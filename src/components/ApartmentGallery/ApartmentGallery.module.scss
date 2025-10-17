@@ -1,0 +1,42 @@
+@keyframes fadeButton {
+  100% {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid rgb(144, 144, 144);
+  }
+}
+
+.apartmentGallery {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      font-size: 1.25rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 4rem;
+      border: 1px solid rgb(172, 172, 172);
+      outline: none;
+      animation: back 10s ease-in-out forwards;
+
+      &:hover {
+        animation: fadeButton 0.2s ease-in-out forwards;
+      }
+    }
+
+    .imageContainer {
+      width: 75%;
+
+      img {
+        border-radius: 1rem;
+        height: 700px;
+      }
+    }
+  }
+}
