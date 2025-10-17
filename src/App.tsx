@@ -6,10 +6,12 @@ import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ApartmentDetail from "./pages/ApartmentDetail/ApartmentDetail";
 import ApartmentData from "./Data/apartments.json";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
