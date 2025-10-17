@@ -20,10 +20,9 @@ const ApartmentDetailTitle: React.FC<ApartmentDetailTitleProps> = ({
         <h1>{title}</h1>
         <div className={styles.locationDiv}>
           <img src={locationIcon} alt="Location Icon" height={20} width={20} />
-          <p> ul.Kusocińskiego 12, Busko-Zdrój</p>
+          <p> ul.Kusocińskiego 12, Busko-Zdrój </p>
           <p>
-            {meters} m
-            <sup>2</sup>
+            {meters} m<sup>2</sup>
           </p>
         </div>
       </div>

@@ -1,6 +1,9 @@
 import React from "react";
 import ApartmentDetailTitle from "../../sections/ApartmentDetail/ApartmentDetailTitle/ApartmentDetailTitle";
 import ApartmentGallery from "../../components/ApartmentGallery/ApartmentGallery";
+import styles from "./ApartmentDetail.module.scss";
+import { NavLink } from "react-router-dom";
+import arrowIcon from "../../assets/Icons/leftArrow.svg";
 
 type ApartmentDetailProps = {
   title: string;
@@ -17,6 +20,14 @@ const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
 }) => {
   return (
     <>
+      <div className={styles.returnButtonDiv}>
+        <div className={styles.buttonConatainer}>
+          <NavLink className={styles.button} to="/Apartments">
+            <img src={arrowIcon} height={20} width={20} />
+            <p>Powrót do apartamentów</p>
+          </NavLink>
+        </div>
+      </div>
       <ApartmentDetailTitle title={title} price={price} meters={meters} />
       <ApartmentGallery images={images} />
     </>
