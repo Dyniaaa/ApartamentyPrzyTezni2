@@ -1,16 +1,10 @@
-@keyframes fadeButton {
-  100% {
-    background-color: rgb(225, 225, 225);
-    border: 1px solid rgb(144, 144, 144);
-  }
-}
-
 .apartmentGallery {
   width: 100%;
   justify-content: center;
   display: flex;
+  flex-direction: column;
 
-  div {
+  .imageDiv {
     width: 95%;
     display: flex;
     justify-content: center;
@@ -23,19 +17,52 @@
       border-radius: 4rem;
       border: 1px solid rgb(172, 172, 172);
       outline: none;
-      animation: back 10s ease-in-out forwards;
+      cursor: pointer;
+
+      transition: background-color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
 
       &:hover {
-        animation: fadeButton 0.2s ease-in-out forwards;
+        background-color: rgb(225, 225, 225);
+        border-color: rgb(144, 144, 144);
       }
     }
 
     .imageContainer {
+      display: flex;
+      justify-content: center;
       width: 75%;
 
       img {
         border-radius: 1rem;
         height: 700px;
+      }
+    }
+  }
+
+  .tilesDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    button {
+      outline: none;
+      object-fit: cover;
+      object-position: center;
+
+      img {
+        height: 80px;
+        border-radius: 1rem;
+        margin: 2rem 0.5rem 0 0.5rem;
+        cursor: pointer;
+        transition: transform 0.1s ease, box-shadow 0.2s ease;
+      }
+
+      .activeTile {
+        box-shadow: 0 0 5px black;
       }
     }
   }

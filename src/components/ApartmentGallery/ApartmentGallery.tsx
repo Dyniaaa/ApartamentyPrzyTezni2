@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./ApartmentGallery.module.scss";
+import styles from "./ApartmentGallery.module.scss";
 
 type GalleryProps = {
   images: string[];
@@ -16,29 +16,29 @@ const ApartmentGallery: React.FC<GalleryProps> = ({ images }) => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const changePhoto = (id: number) => {
+    setCurrentIndex(id);
+  };
+
   return (
-    <section className={style.apartmentGallery}>
-      <div className="relative w-full max-w-3xl mx-auto">
-        <button
-          onClick={prevImage}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
-        >
-          &#10094;
-        </button>
-        <div className={style.imageContainer}>
-          <img
-            src={images[currentIndex]}
-            alt={`Image ${currentIndex}`}
-            className="w-full h-[500px] object-cover rounded-2xl transition-transform duration-500"
-          />
+    <section className={styles.apartmentGallery}>
+      <div className={styles.imageDiv}>
+        <button onClick={prevImage}>&#10094;</button>
+        <div className={styles.imageContainer}>
+          <img src={images[currentIndex]} alt={`Image ${currentIndex}`} />
         </div>
 
-        <button
-          onClick={nextImage}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
-        >
-          &#10095;
-        </button>
+        <button onClick={nextImage}>&#10095;</button>
+      </div>
+      <div className={styles.tilesDiv}>
+        {images.map((image, id) => (
+          <button key={images[id]} onClick={() => changePhoto(id)}>
+            <img
+              src={image}
+              className={currentIndex === id ? styles.activeTile : undefined}
+            />
+          </button>
+        ))}
       </div>
     </section>
   );
