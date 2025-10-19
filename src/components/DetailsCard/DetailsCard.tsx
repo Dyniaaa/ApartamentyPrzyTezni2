@@ -1,21 +1,22 @@
 import React from "react";
-import styles from "./BenefitCard.module.scss";
 
-type BenefitCardProps = {
+type DetailsCardProps = {
   description: string;
   title: string;
   icon: string;
   alt: string;
+  classs: string;
 };
 
-const BenefitCard: React.FC<BenefitCardProps> = ({
+const DetailsCard: React.FC<DetailsCardProps> = ({
   description,
   title,
   icon,
   alt,
+  classs,
 }) => {
   return (
-    <div className={styles.benefitCard}>
+    <div className={classs}>
       <img src={icon} alt={alt} width={40} height={40} />
       <p>{title}</p>
       <p>{description}</p>
@@ -23,4 +24,4 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   );
 };
 
-export default BenefitCard;
+export default DetailsCard;

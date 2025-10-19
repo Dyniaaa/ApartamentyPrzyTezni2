@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Sypialnia",
+    "utilities": [
+      { "icon": "src/assets/Icons/bed.svg", "text": "podwójne łóżko" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "szafa" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "stolik" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "pościel" }
+    ]
+  },
+  {
+    "title": "Łazienka",
+    "utilities": [
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Prysznic walk-in" },
+      {
+        "icon": "src/assets/Icons/checkmark.svg",
+        "text": "Suszarka do włosów"
+      },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Komplet ręczników" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Kosmetyki hotelowe" }
+    ]
+  },
+  {
+    "title": "Kuchnia",
+    "utilities": [
+      {
+        "icon": "src/assets/Icons/checkmark.svg",
+        "text": "Lodówka z zamrażarką"
+      },
+      {
+        "icon": "src/assets/Icons/checkmark.svg",
+        "text": "Kuchenka indukcyjna"
+      },
+      {
+        "icon": "src/assets/Icons/checkmark.svg",
+        "text": "Czajnik elektryczny"
+      },
+      {
+        "icon": "src/assets/Icons/cutlery.svg",
+        "text": "Naczynia i sztućce"
+      },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Ekspres do kawy" }
+    ]
+  },
+  {
+    "title": "Salon",
+    "utilities": [
+      {
+        "icon": "src/assets/Icons/checkmark.svg",
+        "text": "Telewizor Smart TV 43"
+      },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Rozkładana sofa" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Stolik kawowy" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Klimatyzacja" }
+    ]
+  },
+  {
+    "title": "Internet i rozrywka",
+    "utilities": [
+      { "icon": "src/assets/Icons/wifi.svg", "text": "WiFi 100 Mb/s" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Netflix" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "YouTube" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Kanały TV" }
+    ]
+  },
+  {
+    "title": "Dodatkowe",
+    "utilities": [
+      { "icon": "src/assets/Icons/car.svg", "text": "Parking prywatny" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Żelazko i deska" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Odkurzacz" },
+      { "icon": "src/assets/Icons/checkmark.svg", "text": "Zestaw sprzątający" }
+    ]
+  }
+]

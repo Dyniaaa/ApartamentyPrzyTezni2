@@ -1,4 +1,4 @@
-import BenefitCard from "../../../components/BenefitCard/BenefitCard";
+import DetailsCard from "../../../components/DetailsCard/DetailsCard";
 import styles from "./Benefits.module.scss";
 import React from "react";
 import waterDrop from "../../../assets/Icons/waterdrop.svg";
@@ -17,7 +17,8 @@ const Benefits: React.FC = () => {
       </p>
       <ul>
         <li>
-          <BenefitCard
+          <DetailsCard
+            classs={styles.detailsCard}
             icon={waterDrop}
             title="Przy tężni solankowej"
             description="50m od leczniczej tężni - oddychaj zdrowiem"
@@ -25,7 +26,8 @@ const Benefits: React.FC = () => {
           />
         </li>
         <li>
-          <BenefitCard
+          <DetailsCard
+            classs={styles.detailsCard}
             icon={car}
             title="Parking bezpłatny"
             description="Własne miejsca parkingowe dla gości"
@@ -33,7 +35,8 @@ const Benefits: React.FC = () => {
           />
         </li>
         <li>
-          <BenefitCard
+          <DetailsCard
+            classs={styles.detailsCard}
             icon={coffe}
             title="Pełne wyposażenie"
             description="Aneks kuchenny ze wszystkimi udogodnieniami"
@@ -41,7 +44,8 @@ const Benefits: React.FC = () => {
           />
         </li>
         <li>
-          <BenefitCard
+          <DetailsCard
+            classs={styles.detailsCard}
             icon={wifi}
             title="WiFi & więcej"
             description="Szybki internet, TV, klimatyzacja"

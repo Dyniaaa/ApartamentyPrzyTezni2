@@ -24,6 +24,31 @@
       display: flex;
       justify-content: center;
       width: 20%;
+
+      .detailsCard {
+        padding: 3.5em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgb(219, 219, 219);
+        border-radius: 1rem;
+
+        &:hover {
+          box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.1);
+          transition: all 0.1s ease-in-out;
+        }
+
+        p {
+          text-align: center;
+          margin-top: 0.5em;
+
+          &:last-of-type {
+            color: rgb(108, 108, 108);
+            font-size: 83%;
+          }
+        }
+      }
     }
   }
 }
