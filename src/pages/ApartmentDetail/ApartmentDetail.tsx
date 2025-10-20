@@ -4,9 +4,9 @@ import ApartmentGallery from "../../components/ApartmentGallery/ApartmentGallery
 import styles from "./ApartmentDetail.module.scss";
 import { NavLink } from "react-router-dom";
 import arrowIcon from "../../assets/Icons/leftArrow.svg";
-import Reservation from "../../sections/ApartmentDetail/Reservation/Reservation";
 import Description from "../../sections/ApartmentDetail/Description/Description";
 import Location from "../../sections/ApartmentDetail/Location/Location";
+import Reservation from "../../sections/ApartmentDetail/Reservation/Reservation";
 
 type ApartmentDetailProps = {
   title: string;

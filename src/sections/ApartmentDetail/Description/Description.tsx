@@ -6,6 +6,7 @@ import BathIcon from "../../../assets/Icons/bath.svg";
 import BedIcon from "../../../assets/Icons/bed.svg";
 import UtilityCard from "../../../components/UtilityCard/UtilityCard";
 import utilityData from "../../../data/utilities.json";
+import checkmark from "../../../assets/Icons/checkmark.svg";
 
 const Description: React.FC = () => {
   return (
@@ -59,6 +60,32 @@ const Description: React.FC = () => {
             />
           ))}
         </div>
+      </div>
+
+      <div className={styles.regulationDiv}>
+        <h1>Regulamin</h1>
+        <ul>
+          <li>
+            <img src={checkmark} />
+            <p>Check-in: 15:00 - 22:00</p>
+          </li>
+          <li>
+            <img src={checkmark} />
+            <p>Check-out: do 11:00</p>
+          </li>
+          <li>
+            <img src={checkmark} />
+            <p>Zakaz palenia w apartamencie</p>
+          </li>
+          <li>
+            <img src={checkmark} />
+            <p>Zwierzęta domowe mile widziane (po wcześniejszym uzgodnieniu)</p>
+          </li>
+          <li>
+            <img src={checkmark} />
+            <p>Bezpłatne anulowanie do 24h przed przyjazdem</p>
+          </li>
+        </ul>
       </div>
     </section>
   );
