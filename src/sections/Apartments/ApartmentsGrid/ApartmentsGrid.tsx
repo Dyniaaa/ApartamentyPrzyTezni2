@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ApartmentsGrid.module.scss";
 import ApartamentCard from "../../../components/ApartamentCard/ApartamentCard";
-import apartmentsData from "../../../Data/apartments.json";
+import apartmentsData from "../../../data/apartments.json";
 
 const ApartmentsGrid: React.FC = () => {
   return (
