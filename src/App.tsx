@@ -18,7 +18,7 @@ function App() {
         <Route path="/Apartments" element={<Apartments />} />
         <Route path="/Contact" element={<Contact />} />
         <Route
-          path={ApartmentData[0].link}
+          path="/Apartament0.1"
           element={
             <ApartmentDetail
               title={ApartmentData[0].title}
