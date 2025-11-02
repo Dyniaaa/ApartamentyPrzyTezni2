@@ -1,6 +1,6 @@
 @keyframes activateLink {
-  0% {
-  }
+  0% {}
+
   100% {
     color: white;
     background-color: rgb(2, 29, 41);
@@ -8,21 +8,28 @@
 }
 
 .navbar {
+  height: 100px;
   width: 100%;
   display: flex;
+  position: fixed;
+  z-index: 2;
   justify-content: center;
+  background-color: white;
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid rgb(218, 218, 229);
 
   .logo {
-    background-image: url("../../assets/LogoAPTblack.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 3rem;
-    height: 100%;
+    margin-left: 3rem;
+    height: 6rem;
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 85px;
+    }
   }
 
   ul {
@@ -35,10 +42,93 @@
       padding: 1rem;
       border-radius: 0.8rem;
       outline: none;
+      text-transform: uppercase;
     }
 
     .active {
       animation: activateLink 0.2s ease-in-out forwards;
+    }
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+
+
+  .closeIcon {
+    display: none;
+  }
+}
+
+
+//Big phones and tablets
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0;
+
+    .logo {
+      width: 30%;
+      margin-left: 1rem;
+
+    }
+
+    ul {
+      display: none;
+    }
+
+    .burgerMenu {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      margin-right: 3rem;
+    }
+
+    .closeIcon {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      margin-right: 3rem;
+    }
+
+    .burgerMenuList {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 2rem 0;
+      top: 100px;
+      width: 100%;
+      margin: 0;
+      border-bottom: 1px solid rgb(218, 218, 229);
+
+      li {
+        width: 80%; 
+        margin: 0.5rem 0;
+
+        .burgerMenuLink {
+          display: flex;
+          width: 100%;
+        }
+
+        .active {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+//Phones
+
+@media (max-width: 576px) {
+  .navbar {
+    .logo {
+      width: 40%;
     }
   }
 }

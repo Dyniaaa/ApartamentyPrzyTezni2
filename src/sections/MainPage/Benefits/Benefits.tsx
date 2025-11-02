@@ -9,7 +9,7 @@ import wifi from "../../../assets/Icons/wifi.svg";
 const Benefits: React.FC = () => {
   return (
     <section className={styles.benefits}>
-      <h1>Dlaczego Apartamenty przy tężni?</h1>
+      <h1>Dlaczego Apartamenty&nbsp;przy&nbsp;tężni?</h1>
       <p className={styles.description}>
         Jedyne Apartamenty w Busku-Zdroju położone bezpośrednio przy tężni
         solankowej. Ciesz się zdrowotnymi właściwościami solanki nie wychodząc z

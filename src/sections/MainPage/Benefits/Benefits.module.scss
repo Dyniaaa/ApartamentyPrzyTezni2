@@ -5,6 +5,8 @@
 
   h1 {
     padding: 4rem 0 0 0;
+    text-align: center;
+    margin: 1rem;
   }
 
   .description {
@@ -48,6 +50,30 @@
             font-size: 83%;
           }
         }
+      }
+    }
+  }
+}
+
+
+//Big phones and tablets
+
+@media (max-width: 768px) {
+  .benefits {
+
+
+    .description {
+      width: 80%;
+    }
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        width: 80%;
+        margin: 1rem;
+
       }
     }
   }
