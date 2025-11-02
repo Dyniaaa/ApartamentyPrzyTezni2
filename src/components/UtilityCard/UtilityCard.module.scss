@@ -1,0 +1,27 @@
+.utilityCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgb(218, 218, 229);
+  border-radius: 1rem;
+
+  h3 {
+    font-weight: 400;
+    margin: 0.5rem 0 1rem 0;
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+
+      img {
+        width: 30px;
+        margin-right: 1rem;
+      }
+      p {
+        margin: 0.2rem 0;
+      }
+    }
+  }
+}

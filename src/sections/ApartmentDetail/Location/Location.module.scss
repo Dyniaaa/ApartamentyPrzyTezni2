@@ -1,0 +1,57 @@
+.location {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .locationDiv {
+    width: 82%;
+    border: 1px solid rgb(218, 218, 229);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+
+    h1 {
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .contentDiv {
+      display: flex;
+      justify-content: space-between;
+
+      .infoDiv {
+        width: 45%;
+
+        ul {
+          margin-top: 0.8rem;
+
+          li {
+            display: flex;
+            margin-bottom: 0.6rem;
+
+            img {
+              width: 25px;
+              margin-right: 0.6rem;
+            }
+          }
+        }
+      }
+
+      .mapDiv {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(225, 225, 225);
+        border-radius: 1rem;
+        padding: 1.5rem;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.apartmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  gap: 2rem;
+  padding: 5rem 12rem;
+}

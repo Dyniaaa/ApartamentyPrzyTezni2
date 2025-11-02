@@ -1,0 +1,35 @@
+.informations {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 1.5rem;
+
+  h1 {
+    font-weight: 400;
+  }
+
+  .contactDiv {
+    display: flex;
+    margin: 1rem 0;
+
+    .contactIcon {
+      border-radius: 0.7rem;
+      padding: 0.7rem;
+      background-color: rgb(234, 234, 242);
+      height: 2.5rem;
+      width: 2.5rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .checkinDiv {
+    margin: 1rem 0;
+    background-color: rgb(234, 234, 242);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .moreInfo {
+    color: rgb(108, 108, 108);
+  }
+}
