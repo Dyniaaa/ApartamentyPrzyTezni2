@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}><img src={logo} alt="Logo" /></div>
+      <NavLink to='/' className={styles.logo}><img src={logo} alt="Logo" /></NavLink>
       <ul>
         <li>
           <NavLink
