@@ -4,7 +4,6 @@
   justify-content: space-evenly;
   width: 100%;
   padding: 5rem 0rem;
-  max-height: 75vh;
 
   .textContainer {
     padding-left: 1rem;
@@ -48,6 +47,26 @@
     img {
       border-radius: 15px;
       height: 110%;
+    }
+  }
+}
+
+
+//Big phones and tablets
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 1.5rem;
+
+    .textContainer {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    .imageContainer {
+      width: 100%;
+      padding: 0.1rem;
     }
   }
 }
