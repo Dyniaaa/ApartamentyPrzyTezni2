@@ -9,13 +9,14 @@
 
   div {
     padding: 2rem 0;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(218, 218, 229);
 
     ul {
       width: 33%;
+      margin: 0rem 2rem;
 
       li {
         margin: 0.6rem 0;
@@ -28,6 +29,7 @@
         .title {
           font-size: 1.5rem;
         }
+
         p {
           color: rgb(108, 108, 108);
         }
@@ -38,5 +40,31 @@
   .copyright {
     padding: 1rem 0 1.5rem 0;
     color: rgb(108, 108, 108);
+    text-align: center;
+  }
+}
+
+//Big phones and tablets
+
+@media (max-width: 768px) {
+  .footer {
+    div {
+      flex-direction: column;
+
+      ul {
+        width: 90%;
+
+        li {
+          h1 {
+            font-weight: 400;
+          }
+
+          .title {
+            font-size: 1.3rem;
+          }
+
+        }
+      }
+    }
   }
 }

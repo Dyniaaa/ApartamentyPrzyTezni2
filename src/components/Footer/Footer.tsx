@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div>
         <ul>
           <li>
-            <h1 className={styles.title}>Apartamenty przy Tężni</h1>
+            <h1 className={styles.title}>Apartamenty&nbsp;przy&nbsp;Tężni</h1>
           </li>
           <li>
             <p>
