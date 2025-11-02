@@ -13,12 +13,11 @@ const Navbar: React.FC = () => {
 
   const menuClick = () => {
     setBurgerMenu((prev) => !prev);
-    if (burgerMenu) {
-
-    } else { }
   };
 
-
+  const handleLinkClick = () => {
+    setBurgerMenu(false);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -56,6 +55,7 @@ const Navbar: React.FC = () => {
         <NavLink
           to={"/"}
           className={({ isActive }) => (isActive ? styles.active : styles.burgerMenuLink)}
+          onClick={handleLinkClick}
         >
           Strona Główna
         </NavLink>
@@ -64,6 +64,7 @@ const Navbar: React.FC = () => {
           <NavLink
             to={"/Apartments"}
             className={({ isActive }) => (isActive ? styles.active : styles.burgerMenuLink)}
+            onClick={handleLinkClick}
           >
             Apartamenty
           </NavLink>
@@ -72,6 +73,7 @@ const Navbar: React.FC = () => {
           <NavLink
             to={"/Contact"}
             className={({ isActive }) => (isActive ? styles.active : styles.burgerMenuLink)}
+            onClick={handleLinkClick}
           >
             Kontakt
           </NavLink>
