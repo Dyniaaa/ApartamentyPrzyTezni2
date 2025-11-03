@@ -12,6 +12,7 @@
   border-bottom: 1px solid rgb(218, 218, 229);
 
   .buttonConatainer {
+    margin-top: 100px;
     width: 62%;
     display: flex;
     justify-content: flex-start;
@@ -30,6 +31,7 @@
       img {
         margin-right: 1.5rem;
       }
+
       p {
         font-weight: 600;
       }
@@ -37,8 +39,28 @@
   }
 }
 
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .detailsContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .detailsDiv {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .detailsDiv {
+    flex-direction: column;
+  }
 }

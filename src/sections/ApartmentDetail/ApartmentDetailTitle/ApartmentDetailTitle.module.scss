@@ -9,6 +9,7 @@
       font-weight: 400;
       font-size: 2rem;
     }
+
     .locationDiv {
       display: flex;
       margin: 0.5rem 0;
@@ -38,6 +39,22 @@
     p {
       margin-top: 0.5rem;
       text-align: end;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .apartmentDetailTitle {
+    flex-direction: column;
+    width: 90%;
+
+    .priceDiv {
+      p {
+        margin-top: 0rem;
+        text-align: start;
+      }
     }
   }
 }

@@ -4,3 +4,30 @@
   gap: 2rem;
   padding: 5rem 12rem;
 }
+
+
+@media (max-width: 1600px) {
+  .apartmentsGrid {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .apartmentsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }
+}
+
+//Big phones and tablets
+
+@media (max-width: 800px) {
+  .apartmentsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+  }
+}
+
+@media (max-width: 430px) {
+  .apartmentsGrid {
+    padding: 5rem 0rem;
+  }
+}

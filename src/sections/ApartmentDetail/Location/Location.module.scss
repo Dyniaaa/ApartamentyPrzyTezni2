@@ -55,3 +55,35 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .location {
+
+    .locationDiv {
+      width: 100%;
+
+      .contentDiv {
+        flex-direction: column;
+
+        .infoDiv {
+          width: 100%;
+
+          ul {
+            li {
+              margin-bottom: 1rem;
+
+              img {
+                width: 20px;
+              }
+            }
+          }
+        }
+
+        .mapDiv {
+          width: 100%;
+          padding: 0.7rem;
+        }
+      }
+    }
+  }
+}

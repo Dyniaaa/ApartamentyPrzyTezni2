@@ -4,3 +4,12 @@
   justify-content: center;
   margin: 2.5rem 0;
 }
+
+//Big phones and tablets
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+}

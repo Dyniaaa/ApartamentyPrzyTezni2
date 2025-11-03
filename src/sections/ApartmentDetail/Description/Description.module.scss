@@ -54,6 +54,7 @@
       font-weight: 400;
       margin: 2rem 0;
     }
+
     .gridDiv {
       width: 100%;
       display: grid;
@@ -73,6 +74,7 @@
       font-weight: 400;
       padding-bottom: 1rem;
     }
+
     ul {
       li {
         display: flex;
@@ -81,10 +83,20 @@
           width: 30px;
           margin-right: 0.5rem;
         }
+
         p {
           padding: 0.3rem 0;
         }
       }
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .description {
+    width: 100%;
+
+
   }
 }

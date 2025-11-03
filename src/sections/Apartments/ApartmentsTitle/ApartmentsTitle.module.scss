@@ -8,6 +8,8 @@
     font-weight: 400;
     font-size: 2.2rem;
     margin: 3rem 0 1rem 0;
+    margin-top: 9rem;
+    text-align: center;
   }
 
   p {
@@ -16,5 +18,14 @@
     width: 40%;
     color: rgb(108, 108, 108);
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .apartmentsTitle {
+
+    p {
+      width: 80%;
+    }
   }
 }

@@ -31,13 +31,17 @@ const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
           </NavLink>
         </div>
       </div>
-      <ApartmentDetailTitle title={title} price={price} meters={meters} />
-      <ApartmentGallery images={images} />
-      <div className={styles.detailsDiv}>
-        <Description />
-        <Reservation />
+      <div className={styles.container}>
+        <div className={styles.detailsContainer}>
+          <ApartmentDetailTitle title={title} price={price} meters={meters} />
+          <ApartmentGallery images={images} />
+          <div className={styles.detailsDiv}>
+            <Description />
+            <Reservation />
+          </div>
+          <Location />
+        </div>
       </div>
-      <Location />
     </>
   );
 };

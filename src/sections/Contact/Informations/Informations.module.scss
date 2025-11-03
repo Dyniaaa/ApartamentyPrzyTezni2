@@ -33,3 +33,43 @@
     color: rgb(108, 108, 108);
   }
 }
+
+//Big phones and tablets
+
+@media (max-width: 1200px) {
+  .informations {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .informations {
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .informations {
+    .contactDiv {
+      margin: 0.5rem 0;
+
+      .contactIcon {
+        margin-right: 1rem;
+      }
+
+      div {
+        p {
+          font-size: 0.8rem;
+        }
+
+        .moreInfo {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+
+  }
+}
