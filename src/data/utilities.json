@@ -2,23 +2,23 @@
   {
     "title": "Sypialnia",
     "utilities": [
-      { "icon": "public/Icons/bed.svg", "text": "podwójne łóżko" },
-      { "icon": "public/Icons/wardrobe.svg", "text": "szafa" },
-      { "icon": "public/Icons/sideTable.svg", "text": "stolik" },
-      { "icon": "public/Icons/blanket.svg", "text": "pościel" }
+      { "icon": "../../../assets/Icons/bed.svg", "text": "podwójne łóżko" },
+      { "icon": "../../../assets/Icons/wardrobe.svg", "text": "szafa" },
+      { "icon": "../../../assets/Icons/sideTable.svg", "text": "stolik" },
+      { "icon": "../../../assets/Icons/blanket.svg", "text": "pościel" }
     ]
   },
   {
     "title": "Łazienka",
     "utilities": [
-      { "icon": "public/Icons/shower.svg", "text": "Prysznic walk-in" },
+      { "icon": "../../../assets/Icons/shower.svg", "text": "Prysznic walk-in" },
       {
-        "icon": "public/Icons/hairdryer.svg",
+        "icon": "../../../assets/Icons/hairdryer.svg",
         "text": "Suszarka do włosów"
       },
-      { "icon": "public/Icons/bathTowel.svg", "text": "Komplet ręczników" },
+      { "icon": "../../../assets/Icons/bathTowel.svg", "text": "Komplet ręczników" },
       {
-        "icon": "public/Icons/beautyAndCosmetics.svg",
+        "icon": "../../../assets/Icons/beautyAndCosmetics.svg",
         "text": "Kosmetyki hotelowe"
       }
     ]
@@ -27,56 +27,56 @@
     "title": "Kuchnia",
     "utilities": [
       {
-        "icon": "public/Icons/fridge.svg",
+        "icon": "../../../assets/Icons/fridge.svg",
         "text": "Lodówka z zamrażarką"
       },
       {
-        "icon": "public/Icons/hob.svg",
+        "icon": "../../../assets/Icons/hob.svg",
         "text": "Kuchenka indukcyjna"
       },
       {
-        "icon": "public/Icons/electricKettle.svg",
+        "icon": "../../../assets/Icons/electricKettle.svg",
         "text": "Czajnik elektryczny"
       },
       {
-        "icon": "public/Icons/cutlery.svg",
+        "icon": "../../../assets/Icons/cutlery.svg",
         "text": "Naczynia i sztućce"
       },
-      { "icon": "public/Icons/coffeeMachine.svg", "text": "Ekspres do kawy" }
+      { "icon": "../../../assets/Icons/coffeeMachine.svg", "text": "Ekspres do kawy" }
     ]
   },
   {
     "title": "Salon",
     "utilities": [
       {
-        "icon": "public/Icons/smartTv.svg",
+        "icon": "../../../assets/Icons/smartTv.svg",
         "text": "Telewizor Smart TV 43"
       },
-      { "icon": "public/Icons/sofaBed.svg", "text": "Rozkładana sofa" },
-      { "icon": "public/Icons/coffeeTable.svg", "text": "Stolik kawowy" },
-      { "icon": "public/Icons/airConditioner.svg", "text": "Klimatyzacja" }
+      { "icon": "../../../assets/Icons/sofaBed.svg", "text": "Rozkładana sofa" },
+      { "icon": "../../../assets/Icons/coffeeTable.svg", "text": "Stolik kawowy" },
+      { "icon": "../../../assets/Icons/airConditioner.svg", "text": "Klimatyzacja" }
     ]
   },
   {
     "title": "Internet i rozrywka",
     "utilities": [
-      { "icon": "public/Icons/wifi.svg", "text": "WiFi 100 Mb/s" },
-      { "icon": "public/Icons/netflix.svg", "text": "Netflix" },
-      { "icon": "public/Icons/youtube.svg", "text": "YouTube" },
-      { "icon": "public/Icons/newsReport.svg", "text": "Kanały TV" }
+      { "icon": "../../../assets/Icons/wifi.svg", "text": "WiFi 100 Mb/s" },
+      { "icon": "../../../assets/Icons/netflix.svg", "text": "Netflix" },
+      { "icon": "../../../assets/Icons/youtube.svg", "text": "YouTube" },
+      { "icon": "../../../assets/Icons/newsReport.svg", "text": "Kanały TV" }
     ]
   },
   {
     "title": "Dodatkowe",
     "utilities": [
-      { "icon": "public/Icons/car.svg", "text": "Parking prywatny" },
+      { "icon": "../../../assets/Icons/car.svg", "text": "Parking prywatny" },
       {
-        "icon": "public/Icons/ironingBoard.svg",
+        "icon": "../../../assets/Icons/ironingBoard.svg",
         "text": "Żelazko i deska"
       },
-      { "icon": "public/Icons/vacuumCleaner.svg", "text": "Odkurzacz" },
+      { "icon": "../../../assets/Icons/vacuumCleaner.svg", "text": "Odkurzacz" },
       {
-        "icon": "public/Icons/cleaningSet.svg",
+        "icon": "../../../assets/Icons/cleaningSet.svg",
         "text": "Zestaw sprzątający"
       }
     ]
