@@ -7,11 +7,18 @@ import BedIcon from "../../../assets/Icons/bed.svg";
 import UtilityCard from "../../../components/UtilityCard/UtilityCard";
 import utilityData from "../../../data/utilities.json";
 import checkmark from "../../../assets/Icons/checkmark.svg";
+import { motion } from "framer-motion";
 
 const Description: React.FC = () => {
   return (
     <section className={styles.description}>
-      <div className={styles.numbersDiv}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className={styles.numbersDiv}
+      >
         <DetailsCard
           classs={styles.numbersCard}
           description="Goście"
@@ -33,9 +40,15 @@ const Description: React.FC = () => {
           icon={BathIcon}
           alt="Ikona Wanny"
         />
-      </div>
+      </motion.div>
 
-      <div className={styles.descriptionTextDiv}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className={styles.descriptionTextDiv}
+      >
         <h1>O apartamencie</h1>
         <p>
           Luksusowy apartament z widokiem na park. Idealny dla par szukających
@@ -47,10 +60,17 @@ const Description: React.FC = () => {
           idealny dla par poszukujących spokojnego, komfortowego miejsca na
           wypoczynek w Busku-Zdroju.
         </p>
-      </div>
+      </motion.div>
 
       <div className={styles.utilitiesDiv}>
-        <h1>Udogodnienia</h1>
+        <motion.h1
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Udogodnienia
+        </motion.h1>
         <div className={styles.gridDiv}>
           {utilityData.map((section, index) => (
             <UtilityCard
@@ -62,31 +82,62 @@ const Description: React.FC = () => {
         </div>
       </div>
 
-      <div className={styles.regulationDiv}>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className={styles.regulationDiv}
+      >
         <h1>Regulamin</h1>
         <ul>
-          <li>
+          <motion.li
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
             <img src={checkmark} />
             <p>Check-in: 15:00 - 22:00</p>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <img src={checkmark} />
             <p>Check-out: do 11:00</p>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
             <img src={checkmark} />
             <p>Zakaz palenia w apartamencie</p>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <img src={checkmark} />
             <p>Zwierzęta domowe mile widziane (po wcześniejszym uzgodnieniu)</p>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
             <img src={checkmark} />
             <p>Bezpłatne anulowanie do 24h przed przyjazdem</p>
-          </li>
+          </motion.li>
         </ul>
-      </div>
+      </motion.div>
     </section>
   );
 };

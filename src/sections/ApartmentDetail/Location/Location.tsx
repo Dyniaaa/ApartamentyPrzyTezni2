@@ -1,14 +1,34 @@
 import React from "react";
 import styles from "./Location.module.scss";
 import locationIcon from "../../../assets/Icons/location.svg";
+import { motion } from "framer-motion";
 
 const Location: React.FC = () => {
   return (
     <section className={styles.location}>
-      <div className={styles.locationDiv}>
-        <h1>Lokalizacja</h1>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className={styles.locationDiv}
+      >
+        <motion.h1
+          initial={{ opacity: 0, x: -35 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Lokalizacja
+        </motion.h1>
         <div className={styles.contentDiv}>
-          <div className={styles.infoDiv}>
+          <motion.div
+            initial={{ opacity: 0, x: -35 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+            className={styles.infoDiv}
+          >
             <p>
               Apartament znajduje się w doskonałej lokalizacji, zaledwie 50
               metrów od leczniczej tężni solankowej. W pobliżu znajdują się
@@ -32,16 +52,22 @@ const Location: React.FC = () => {
                 <p>5 min pieszo do parku zdrojowego</p>
               </li>
             </ul>
-          </div>
-          <div className={styles.mapDiv}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 35 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+            className={styles.mapDiv}
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5316.90131934672!2d20.712631102048018!3d50.46454738916135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717c318b603749b%3A0x7c2c791c19b52654!2sApartamenty%20Przy%20T%C4%99%C5%BCni!5e1!3m2!1spl!2spl!4v1761031450594!5m2!1spl!2spl"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
