@@ -14,7 +14,7 @@
       { "icon": "/icons/shower.svg", "text": "Prysznic walk-in" },
       { "icon": "/icons/hairdryer.svg", "text": "Suszarka do włosów" },
       { "icon": "/icons/bathTowel.svg", "text": "Komplet ręczników" },
-      { "icon": "/icons/beautyAndCosmetics.svg", "text": "Kosmetyki hotelowe" }
+      { "icon": "/icons/beautyAndCosmetic.svg", "text": "Kosmetyki hotelowe" }
     ]
   },
   {
