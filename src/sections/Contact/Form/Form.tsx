@@ -17,11 +17,25 @@ const Form: React.FC = () => {
       >
         Wyślij wiadomość
       </motion.p>
-      <form method="POST">
+
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Nie wypełniaj tego pola: <input name="bot-field" />
+          </label>
+        </p>
+
         <motion.label
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
+          htmlFor="name"
         >
           Imię i nazwisko
         </motion.label>
@@ -40,6 +54,7 @@ const Form: React.FC = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
+          htmlFor="email"
         >
           Email
         </motion.label>
@@ -58,17 +73,18 @@ const Form: React.FC = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
+          htmlFor="message"
         >
           Wiadomość
         </motion.label>
-        <motion.input
+        <motion.textarea
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           placeholder="Twoja wiadomość..."
-          type="text"
           id="message"
           name="message"
+          rows={6}
           required
         />
 
