@@ -2,56 +2,56 @@
   {
     "title": "Sypialnia",
     "utilities": [
-      { "icon": "/icons/bed.svg", "text": "podwójne łóżko" },
-      { "icon": "/icons/wardrobe.svg", "text": "szafa" },
-      { "icon": "/icons/sideTable.svg", "text": "stolik" },
-      { "icon": "/icons/blanket.svg", "text": "pościel" }
+      { "icon": "/Icons/bed.svg", "text": "podwójne łóżko" },
+      { "icon": "/Icons/wardrobe.svg", "text": "szafa" },
+      { "icon": "/Icons/sideTable.svg", "text": "stolik" },
+      { "icon": "/Icons/blanket.svg", "text": "pościel" }
     ]
   },
   {
     "title": "Łazienka",
     "utilities": [
-      { "icon": "/icons/shower.svg", "text": "Prysznic walk-in" },
-      { "icon": "/icons/hairdryer.svg", "text": "Suszarka do włosów" },
-      { "icon": "/icons/bathTowel.svg", "text": "Komplet ręczników" },
-      { "icon": "/icons/beautyAndCosmetic.svg", "text": "Kosmetyki hotelowe" }
+      { "icon": "/Icons/shower.svg", "text": "Prysznic walk-in" },
+      { "icon": "/Icons/hairdryer.svg", "text": "Suszarka do włosów" },
+      { "icon": "/Icons/bathTowel.svg", "text": "Komplet ręczników" },
+      { "icon": "/Icons/beautyAndCosmetic.svg", "text": "Kosmetyki hotelowe" }
     ]
   },
   {
     "title": "Kuchnia",
     "utilities": [
-      { "icon": "/icons/fridge.svg", "text": "Lodówka z zamrażarką" },
-      { "icon": "/icons/hob.svg", "text": "Kuchenka indukcyjna" },
-      { "icon": "/icons/electricKettle.svg", "text": "Czajnik elektryczny" },
-      { "icon": "/icons/cutlery.svg", "text": "Naczynia i sztućce" },
-      { "icon": "/icons/coffeeMachine.svg", "text": "Ekspres do kawy" }
+      { "icon": "/Icons/fridge.svg", "text": "Lodówka z zamrażarką" },
+      { "icon": "/Icons/hob.svg", "text": "Kuchenka indukcyjna" },
+      { "icon": "/Icons/electricKettle.svg", "text": "Czajnik elektryczny" },
+      { "icon": "/Icons/cutlery.svg", "text": "Naczynia i sztućce" },
+      { "icon": "/Icons/coffeeMachine.svg", "text": "Ekspres do kawy" }
     ]
   },
   {
     "title": "Salon",
     "utilities": [
-      { "icon": "/icons/smartTv.svg", "text": "Telewizor Smart TV 43" },
-      { "icon": "/icons/sofaBed.svg", "text": "Rozkładana sofa" },
-      { "icon": "/icons/coffeeTable.svg", "text": "Stolik kawowy" },
-      { "icon": "/icons/airConditioner.svg", "text": "Klimatyzacja" }
+      { "icon": "/Icons/smartTv.svg", "text": "Telewizor Smart TV 43" },
+      { "icon": "/Icons/sofaBed.svg", "text": "Rozkładana sofa" },
+      { "icon": "/Icons/coffeeTable.svg", "text": "Stolik kawowy" },
+      { "icon": "/Icons/airConditioner.svg", "text": "Klimatyzacja" }
     ]
   },
   {
     "title": "Internet i rozrywka",
     "utilities": [
-      { "icon": "/icons/wifi.svg", "text": "WiFi 100 Mb/s" },
-      { "icon": "/icons/netflix.svg", "text": "Netflix" },
-      { "icon": "/icons/youtube.svg", "text": "YouTube" },
-      { "icon": "/icons/newsReport.svg", "text": "Kanały TV" }
+      { "icon": "/Icons/wifi.svg", "text": "WiFi 100 Mb/s" },
+      { "icon": "/Icons/netflix.svg", "text": "Netflix" },
+      { "icon": "/Icons/youtube.svg", "text": "YouTube" },
+      { "icon": "/Icons/newsReport.svg", "text": "Kanały TV" }
     ]
   },
   {
     "title": "Dodatkowe",
     "utilities": [
-      { "icon": "/icons/car.svg", "text": "Parking prywatny" },
-      { "icon": "/icons/ironingBoard.svg", "text": "Żelazko i deska" },
-      { "icon": "/icons/vacuumCleaner.svg", "text": "Odkurzacz" },
-      { "icon": "/icons/cleaningSet.svg", "text": "Zestaw sprzątający" }
+      { "icon": "/Icons/car.svg", "text": "Parking prywatny" },
+      { "icon": "/Icons/ironingBoard.svg", "text": "Żelazko i deska" },
+      { "icon": "/Icons/vacuumCleaner.svg", "text": "Odkurzacz" },
+      { "icon": "/Icons/cleaningSet.svg", "text": "Zestaw sprzątający" }
     ]
   }
 ]
