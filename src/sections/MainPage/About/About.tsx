@@ -2,11 +2,18 @@ import React from "react";
 import styles from "./About.module.scss";
 import locationicon from "../../../assets/Icons/location.svg";
 import aboutImage from "../../../assets/AboutPhoto.jpg";
+import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
     <section className={styles.about}>
-      <div className={styles.textContainer}>
+      <motion.div
+        initial={{ opacity: 0, x: -500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.textContainer}
+        viewport={{ once: true }}
+      >
         <h1>O Busku-Zdrój</h1>
         <p>
           Busko-Zdrój to jedno z najstarszych uzdrowisk w Polsce, słynące z
@@ -47,13 +54,19 @@ const About: React.FC = () => {
             3 min spacerem do centrum uzdrowiska
           </p>
         </div>
-      </div>
-      <div className={styles.imageContainer}>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.imageContainer}
+        viewport={{ once: true }}
+      >
         <img
           src={aboutImage}
           alt="Zdjecie całego budynku apartamenty przy tężni"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

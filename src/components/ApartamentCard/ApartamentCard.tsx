@@ -4,6 +4,7 @@ import peopleIcon from "../../assets/Icons/people.svg";
 import bedIcon from "../../assets/Icons/bed.svg";
 import bathroomIcon from "../../assets/Icons/bath.svg";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 type ApartamentCardProps = {
   description: string;
@@ -15,6 +16,7 @@ type ApartamentCardProps = {
   amountBed: number;
   amountBathrooms: number;
   link: string;
+  delayTime: number;
 };
 
 const ApartamentCard: React.FC<ApartamentCardProps> = ({
@@ -27,9 +29,15 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
   amountBed,
   amountBathrooms,
   link,
+  delayTime,
 }) => {
   return (
-    <div className={styles.ApartamentCard}>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 100, y: 0 }}
+      transition={{ duration: 0.5, delay: delayTime }}
+      className={styles.ApartamentCard}
+    >
       <div className={styles.photoDiv}>
         <img className={styles.mainPhoto} src={photoUrl} alt={altPhoto} />
       </div>
@@ -58,7 +66,7 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
       <NavLink className={styles.navLink} to={link}>
         Zobacz szczegóły
       </NavLink>
-    </div>
+    </motion.div>
   );
 };
 

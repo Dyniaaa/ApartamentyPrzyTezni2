@@ -5,18 +5,37 @@ import waterDrop from "../../../assets/Icons/waterdrop.svg";
 import car from "../../../assets/Icons/car.svg";
 import coffe from "../../../assets/Icons/cutlery.svg";
 import wifi from "../../../assets/Icons/wifi.svg";
+import { motion } from "framer-motion";
 
 const Benefits: React.FC = () => {
   return (
     <section className={styles.benefits}>
-      <h1>Dlaczego Apartamenty&nbsp;przy&nbsp;tężni?</h1>
-      <p className={styles.description}>
+      <motion.h1
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 100, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        Dlaczego Apartamenty&nbsp;przy&nbsp;tężni?
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 100, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className={styles.description}
+      >
         Jedyne Apartamenty w Busku-Zdroju położone bezpośrednio przy tężni
         solankowej. Ciesz się zdrowotnymi właściwościami solanki nie wychodząc z
         okolicy.
-      </p>
+      </motion.p>
       <ul>
-        <li>
+        <motion.li
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <DetailsCard
             classs={styles.detailsCard}
             icon={waterDrop}
@@ -24,8 +43,13 @@ const Benefits: React.FC = () => {
             description="50m od leczniczej tężni - oddychaj zdrowiem"
             alt="Ikona Kropli Wody"
           />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <DetailsCard
             classs={styles.detailsCard}
             icon={car}
@@ -33,8 +57,13 @@ const Benefits: React.FC = () => {
             description="Własne miejsca parkingowe dla gości"
             alt="Ikona Auta"
           />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <DetailsCard
             classs={styles.detailsCard}
             icon={coffe}
@@ -42,8 +71,13 @@ const Benefits: React.FC = () => {
             description="Aneks kuchenny ze wszystkimi udogodnieniami"
             alt="Ikona Sztućców"
           />
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 100, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
           <DetailsCard
             classs={styles.detailsCard}
             icon={wifi}
@@ -51,7 +85,7 @@ const Benefits: React.FC = () => {
             description="Szybki internet, TV, klimatyzacja"
             alt="Ikona WiFi"
           />
-        </li>
+        </motion.li>
       </ul>
     </section>
   );

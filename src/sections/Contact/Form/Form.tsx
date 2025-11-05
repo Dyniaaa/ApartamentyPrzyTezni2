@@ -1,13 +1,34 @@
 import React from "react";
 import style from "./Form.module.scss";
+import { motion } from "framer-motion";
 
 const Form: React.FC = () => {
   return (
-    <section className={style.form}>
-      <p>Wyślij wiadomość</p>
+    <motion.section
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className={style.form}
+    >
+      <motion.p
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        Wyślij wiadomość
+      </motion.p>
       <form method="POST">
-        <label>Imię i nazwisko</label>
-        <input
+        <motion.label
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          Imię i nazwisko
+        </motion.label>
+        <motion.input
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           placeholder="Jan Kowalski"
           type="text"
           id="name"
@@ -15,8 +36,17 @@ const Form: React.FC = () => {
           required
         />
 
-        <label>Email</label>
-        <input
+        <motion.label
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          Email
+        </motion.label>
+        <motion.input
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           placeholder="jan@example.com"
           type="email"
           id="email"
@@ -24,8 +54,17 @@ const Form: React.FC = () => {
           required
         />
 
-        <label>Wiadomość</label>
-        <input
+        <motion.label
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          Wiadomość
+        </motion.label>
+        <motion.input
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
           placeholder="Twoja wiadomość..."
           type="text"
           id="message"
@@ -33,9 +72,16 @@ const Form: React.FC = () => {
           required
         />
 
-        <button type="submit">Wyślij wiadomość</button>
+        <motion.button
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          type="submit"
+        >
+          Wyślij wiadomość
+        </motion.button>
       </form>
-    </section>
+    </motion.section>
   );
 };
 
