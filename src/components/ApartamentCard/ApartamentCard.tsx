@@ -12,9 +12,9 @@ type ApartamentCardProps = {
   title: string;
   altPhoto: string;
   photoUrl: string;
-  amountPeople: number;
-  amountBed: number;
-  amountBathrooms: number;
+  amountPeople: string;
+  amountBed: string;
+  amountBathrooms: string;
   link: string;
   delayTime: number;
   sofa: boolean;
@@ -57,11 +57,7 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
         </div>
         {sofa ? (
           <div>
-            <img
-              className={styles.icon}
-              src={sofaIcon}
-              alt="sofaIcon"
-            />
+            <img className={styles.icon} src={sofaIcon} alt="sofaIcon" />
             <p>{amountBathrooms}&nbsp;sofa</p>
           </div>
         ) : null}
