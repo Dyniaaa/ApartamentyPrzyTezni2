@@ -9,7 +9,7 @@ const About: React.FC = () => {
     <section className={styles.about}>
       <motion.div
         initial={{ opacity: 0, x: -500 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         className={styles.textContainer}
         viewport={{ once: true }}
@@ -17,11 +17,11 @@ const About: React.FC = () => {
         <h1>O Busku-Zdrój</h1>
         <p>
           Busko-Zdrój to uzdrowisko, które od ponad 180 lat przyciąga tych,
-          którzy chcą zadbać o zdrowie albo po prostu zanurzyć się w
-          atmosferze pełnej solankowej pary i cykad parkowych drzew. Miasto
-          słynie z wód siarczkowych, które uchodzą za jedne z najmocniejszych w
-          Europie, oraz borowiny o jakości, którą miejscowi traktują z niemal
-          nabożnym szacunkiem.
+          którzy chcą zadbać o zdrowie albo po prostu zanurzyć się w atmosferze
+          pełnej solankowej pary i cykad parkowych drzew. Miasto słynie z wód
+          siarczkowych, które uchodzą za jedne z najmocniejszych w Europie, oraz
+          borowiny o jakości, którą miejscowi traktują z niemal nabożnym
+          szacunkiem.
         </p>
         <p>
           To miejsce nie tylko leczy, lecz potrafi też rozpieszczać. Park
@@ -57,9 +57,7 @@ const About: React.FC = () => {
             width={20}
             height={20}
           />
-          <p className={styles.iconText}>
-            800m do Sanatorium Marconi
-          </p>
+          <p className={styles.iconText}>800m do Sanatorium Marconi</p>
         </div>
       </motion.div>
       <motion.div

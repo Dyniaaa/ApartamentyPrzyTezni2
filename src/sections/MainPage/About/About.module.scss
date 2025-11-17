@@ -47,10 +47,10 @@
     img {
       border-radius: 15px;
       height: 500px;
+      object-fit: cover;
     }
   }
 }
-
 
 //Big phones and tablets
 
@@ -67,6 +67,10 @@
     .imageContainer {
       width: 100%;
       padding: 0.1rem;
+
+      img {
+        height: 400px;
+      }
     }
   }
 }
