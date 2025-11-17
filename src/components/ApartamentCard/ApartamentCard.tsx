@@ -3,6 +3,7 @@ import styles from "./ApartamentCard.module.scss";
 import peopleIcon from "../../assets/Icons/people.svg";
 import bedIcon from "../../assets/Icons/bed.svg";
 import bathroomIcon from "../../assets/Icons/bath.svg";
+import sofaIcon from "../../assets/Icons/sofa.svg";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -11,25 +12,25 @@ type ApartamentCardProps = {
   title: string;
   altPhoto: string;
   photoUrl: string;
-  price: string;
   amountPeople: number;
   amountBed: number;
   amountBathrooms: number;
   link: string;
   delayTime: number;
+  sofa: boolean;
 };
 
 const ApartamentCard: React.FC<ApartamentCardProps> = ({
   photoUrl,
   altPhoto,
   title,
-  price,
   description,
   amountPeople,
   amountBed,
   amountBathrooms,
   link,
   delayTime,
+  sofa,
 }) => {
   return (
     <motion.div
@@ -43,10 +44,6 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
       </div>
       <div className={styles.titleDiv}>
         <h1>{title}</h1>
-        <div>
-          <h1>{price}&nbsp;zł</h1>
-          <p className={styles.perNight}>za noc</p>
-        </div>
       </div>
       <p className={styles.description}>{description}</p>
       <div className={styles.iconsDiv}>
@@ -58,6 +55,16 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
           <img className={styles.icon} src={bedIcon} alt="bedIcon" />
           <p>{amountBed}&nbsp;sypialnia</p>
         </div>
+        {sofa ? (
+          <div>
+            <img
+              className={styles.icon}
+              src={sofaIcon}
+              alt="sofaIcon"
+            />
+            <p>{amountBathrooms}&nbsp;sofa</p>
+          </div>
+        ) : null}
         <div>
           <img className={styles.icon} src={bathroomIcon} alt="bathroomIcon" />
           <p>{amountBathrooms}&nbsp;łazienka</p>

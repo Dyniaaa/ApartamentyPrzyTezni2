@@ -5,13 +5,11 @@ import { motion } from "framer-motion";
 
 type ApartmentDetailTitleProps = {
   title: string;
-  price: string;
   meters: string;
 };
 
 const ApartmentDetailTitle: React.FC<ApartmentDetailTitleProps> = ({
   title,
-  price,
   meters,
 }) => {
   return (
@@ -51,15 +49,6 @@ const ApartmentDetailTitle: React.FC<ApartmentDetailTitleProps> = ({
           </motion.p>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className={styles.priceDiv}
-      >
-        <h1>{price} zł</h1>
-        <p>za noc</p>
-      </motion.div>
     </section>
   );
 };

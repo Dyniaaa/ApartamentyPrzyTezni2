@@ -16,14 +16,21 @@ const About: React.FC = () => {
       >
         <h1>O Busku-Zdrój</h1>
         <p>
-          Busko-Zdrój to jedno z najstarszych uzdrowisk w Polsce, słynące z
-          leczniczych wód siarczkowych i borowinowych. Miasto oferuje doskonałe
-          warunki do regeneracji i wypoczynku.
+          Busko-Zdrój to uzdrowisko, które od ponad 180 lat przyciąga tych,
+          którzy chcą zadbać o zdrowie albo po prostu zanurzyć się w
+          atmosferze pełnej solankowej pary i cykad parkowych drzew. Miasto
+          słynie z wód siarczkowych, które uchodzą za jedne z najmocniejszych w
+          Europie, oraz borowiny o jakości, którą miejscowi traktują z niemal
+          nabożnym szacunkiem.
         </p>
         <p>
-          Nasze apartamenty znajdują się w strategicznej lokalizacji,
-          umożliwiającej łatwy dostęp do wszystkich atrakcji miasta - od
-          zabytków po nowoczesne centra spa i wellness.
+          To miejsce nie tylko leczy, lecz potrafi też rozpieszczać. Park
+          Zdrojowy rozciąga się jak elegancka zielona aleja czasu, gdzie każdy
+          zakręt skrywa ławeczkę lub skwer pachnący lipą. Latem miasto tętni
+          kulturą: koncerty, wydarzenia plenerowe, festiwale, spacery z
+          przewodnikiem po architekturze uzdrowiskowej. Zimą natomiast Busko
+          staje się spokojniejsze, przytulniejsze, otulone aromatem gorących wód
+          i ciepłych wnętrz sanatoriów.
         </p>
         <div>
           <img
@@ -32,7 +39,7 @@ const About: React.FC = () => {
             width={20}
             height={20}
           />
-          <p className={styles.iconText}>50m od tężni solankowej</p>
+          <p className={styles.iconText}>150m od Parku Zdrojowego</p>
         </div>
         <div>
           <img
@@ -41,7 +48,7 @@ const About: React.FC = () => {
             width={20}
             height={20}
           />
-          <p className={styles.iconText}>200m od basenu termalnego</p>
+          <p className={styles.iconText}>300m do Tężni Solankowej</p>
         </div>
         <div>
           <img
@@ -51,7 +58,7 @@ const About: React.FC = () => {
             height={20}
           />
           <p className={styles.iconText}>
-            3 min spacerem do centrum uzdrowiska
+            800m do Sanatorium Marconi
           </p>
         </div>
       </motion.div>

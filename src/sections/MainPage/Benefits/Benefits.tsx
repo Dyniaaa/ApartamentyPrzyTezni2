@@ -25,9 +25,8 @@ const Benefits: React.FC = () => {
         viewport={{ once: true }}
         className={styles.description}
       >
-        Jedyne Apartamenty w Busku-Zdroju położone bezpośrednio przy tężni
-        solankowej. Ciesz się zdrowotnymi właściwościami solanki nie wychodząc z
-        okolicy.
+        Zanurz się w wyjątkowym uroku lokalnego luksusu Twój prywatny świat w
+        sercu tego miejsca.
       </motion.p>
       <ul>
         <motion.li
@@ -40,7 +39,7 @@ const Benefits: React.FC = () => {
             classs={styles.detailsCard}
             icon={waterDrop}
             title="Przy tężni solankowej"
-            description="50m od leczniczej tężni - oddychaj zdrowiem"
+            description="250m od leczniczej tężni - oddychaj zdrowiem"
             alt="Ikona Kropli Wody"
           />
         </motion.li>

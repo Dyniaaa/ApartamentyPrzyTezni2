@@ -39,9 +39,11 @@ function AnimatedRoutes() {
               element={
                 <ApartmentDetail
                   title={apt.title}
-                  price={apt.price}
                   meters={apt.meters}
                   images={apt.gallery}
+                  airConditioner={apt.airConditioner}
+                  description={apt.description + apt.description2}
+                  sofa={apt.sofa}
                 />
               }
             />

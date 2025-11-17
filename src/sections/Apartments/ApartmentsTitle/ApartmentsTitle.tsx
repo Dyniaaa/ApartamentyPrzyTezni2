@@ -20,8 +20,7 @@ const ApartmentsTitle: React.FC = () => {
         viewport={{ once: true }}
       >
         Wybierz spośród 7 wyjątkowych apartamentów, każdy z unikalnym
-        charakterem i pełnym wyposażeniem. Wszystkie apartamenty są
-        klimatyzowane i oferują bezpłatny dostęp do WiFi oraz parkingu.
+        charakterem i pełnym wyposażeniem.
       </motion.p>
     </section>
   );

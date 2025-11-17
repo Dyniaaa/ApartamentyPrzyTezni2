@@ -13,13 +13,13 @@ const ApartmentsGrid: React.FC = () => {
           photoUrl={apartment.photoUrl}
           altPhoto={apartment.altPhoto}
           title={apartment.title}
-          price={apartment.price}
           description={apartment.description}
           amountPeople={apartment.amountPeople}
           amountBed={apartment.amountBed}
           amountBathrooms={apartment.amountBathrooms}
           link={apartment.link}
           delayTime={(time += 0.2)}
+          sofa={apartment.sofa}
         />
       ))}
     </section>

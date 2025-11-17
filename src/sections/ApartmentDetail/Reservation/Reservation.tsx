@@ -56,6 +56,7 @@ const Reservation: React.FC = () => {
 
   return (
     <section className={styles.reservation}>
+      <p>Zapytaj o dostępność apartamentu!</p>
       <div id="widgetHolder_7qfi86255" className={styles.widgetContainer}></div>
     </section>
   );

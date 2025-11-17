@@ -13,7 +13,7 @@ const Location: React.FC = () => {
         className={styles.textContainer}
       >
         <h1>Lokalizacja</h1>
-        <p>ul.Kusocińskiego 57, 28-100 Busko-Zdrój</p>
+        <p>ul.Kusocińskiego 12, 28-100 Busko-Zdrój</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}

@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
           <li>
             <p>
               Wyjątkowe apartamenty przy tężni solankowej. Komfort, elegancja i
-              zdrowotne właściwości natury.
+              zdrowotne właściwości.
             </p>
           </li>
           <li>
-            <p>ul. Mickiewicza 15 28-100 Busko-Zdrój</p>
+            <p>ul. Kusocińskiego 12, 28-100 Busko-Zdrój</p>
           </li>
         </ul>
         <ul>
@@ -24,16 +24,13 @@ const Footer: React.FC = () => {
             <h1>Kontakt</h1>
           </li>
           <li>
-            <p>Telefon: +48 123 456 789</p>
+            <p>Telefon: +48 508 500 886</p>
           </li>
           <li>
-            <p>Email: rezerwacje@apartamenty-busko.pl</p>
+            <p>Email: beata.sciubisz1977@gmail.com</p>
           </li>
           <li>
-            <p>Godziny: 8:00 - 22:00</p>
-          </li>
-          <li>
-            <p>Awaryjny 24/7: +48 500 123 456</p>
+            <p>Godziny: 8:00 - 20:00</p>
           </li>
         </ul>
         <ul>
@@ -44,7 +41,7 @@ const Footer: React.FC = () => {
             <p>Check-in: 15:00</p>
           </li>
           <li>
-            <p>Check-out: 11:00</p>
+            <p>Check-out: 10:00</p>
           </li>
           <li>
             <p>Parking: bezpłatny</p>

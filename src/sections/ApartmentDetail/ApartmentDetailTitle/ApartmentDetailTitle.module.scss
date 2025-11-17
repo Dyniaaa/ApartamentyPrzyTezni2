@@ -1,7 +1,7 @@
 .apartmentDetailTitle {
-  width: 100%;
+  width: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   margin: 2rem 0;
 
   .nameAndLoctionDiv {
@@ -29,21 +29,7 @@
       }
     }
   }
-
-  .priceDiv {
-    h1 {
-      font-weight: 400;
-      font-size: 2rem;
-    }
-
-    p {
-      margin-top: 0.5rem;
-      text-align: end;
-    }
-  }
 }
-
-
 
 @media (max-width: 768px) {
   .apartmentDetailTitle {

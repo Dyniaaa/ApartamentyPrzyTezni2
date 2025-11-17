@@ -24,8 +24,8 @@ const Informations: React.FC = () => {
       >
         <img className={style.contactIcon} src={phoneIcon} />
         <div>
-          <p>+48 123 456 789</p>
-          <p className={style.moreInfo}>Codziennie 8:00 - 22:00</p>
+          <p>+48 508 500 886</p>
+          <p className={style.moreInfo}>Codziennie 8:00 - 20:00</p>
         </div>
       </motion.div>
       <motion.div
@@ -37,7 +37,7 @@ const Informations: React.FC = () => {
       >
         <img className={style.contactIcon} src={mailIcon} />
         <div>
-          <p>kontakt@apartamenty-teznia.pl</p>
+          <p>beata.sciubisz1977@gmail.com</p>
           <p className={style.moreInfo}>Odpowiadamy w ciągu 24h</p>
         </div>
       </motion.div>
@@ -50,7 +50,7 @@ const Informations: React.FC = () => {
       >
         <img className={style.contactIcon} src={locationIcon} />
         <div>
-          <p>ul. Mickiewicza 15</p>
+          <p>ul. Kusocińskiego 12</p>
           <p className={style.moreInfo}>28-100 Busko-Zdrój</p>
         </div>
       </motion.div>
@@ -61,7 +61,7 @@ const Informations: React.FC = () => {
         className={style.checkinDiv}
       >
         <p>Godziny check-in/out</p>
-        <p className={style.moreInfo}>Check-in: 15:00 | Check-out: 11:00</p>
+        <p className={style.moreInfo}>Check-in: 15:00 | Check-out: 10:00</p>
       </motion.div>
     </section>
   );

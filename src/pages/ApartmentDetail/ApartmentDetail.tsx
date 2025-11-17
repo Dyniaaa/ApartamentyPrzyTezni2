@@ -10,16 +10,20 @@ import Reservation from "../../sections/ApartmentDetail/Reservation/Reservation"
 
 type ApartmentDetailProps = {
   title: string;
-  price: string;
   images: string[];
   meters: string;
+  airConditioner: boolean;
+  sofa: boolean;
+  description: string;
 };
 
 const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
   title,
-  price,
   images,
   meters,
+  airConditioner,
+  description,
+  sofa,
 }) => {
   return (
     <>
@@ -33,10 +37,14 @@ const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
       </div>
       <div className={styles.container}>
         <div className={styles.detailsContainer}>
-          <ApartmentDetailTitle title={title} price={price} meters={meters} />
+          <ApartmentDetailTitle title={title} meters={meters} />
           <ApartmentGallery images={images} />
           <div className={styles.detailsDiv}>
-            <Description />
+            <Description
+              airConditioner={airConditioner}
+              description={description}
+              sofa={sofa}
+            />
             <Reservation />
           </div>
           <Location />
