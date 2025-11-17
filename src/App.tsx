@@ -44,6 +44,9 @@ function AnimatedRoutes() {
                   airConditioner={apt.airConditioner}
                   description={apt.description + apt.description2}
                   sofa={apt.sofa}
+                  amountPeople={apt.amountPeople}
+                  amountBed={apt.amountBed}
+                  amountBathrooms={apt.amountBathrooms}
                 />
               }
             />

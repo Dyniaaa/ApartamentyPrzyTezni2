@@ -65,13 +65,14 @@
 
   .iconsDiv {
     display: flex;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0 0 1rem;
 
     div {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-bottom: 1rem;
+      flex-direction: column;
 
       .icon {
         width: 1.2rem;

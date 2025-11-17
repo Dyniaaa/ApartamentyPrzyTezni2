@@ -13,12 +13,18 @@ type DescriptionDetailProps = {
   airConditioner: boolean;
   sofa: boolean;
   description: string;
+  amountPeople: string;
+  amountBed: string;
+  amountBathrooms: string;
 };
 
 const Description: React.FC<DescriptionDetailProps> = ({
   airConditioner,
   description,
   sofa,
+  amountPeople,
+  amountBed,
+  amountBathrooms,
 }) => {
   return (
     <section className={styles.description}>
@@ -32,14 +38,14 @@ const Description: React.FC<DescriptionDetailProps> = ({
         <DetailsCard
           classs={styles.numbersCard}
           description="Goście"
-          title="2"
+          title={amountPeople}
           icon={PeopleIcon}
           alt="Ikona Osób"
         />
         <DetailsCard
           classs={styles.numbersCard}
           description="Sypialnie"
-          title="1"
+          title={amountBed}
           icon={BedIcon}
           alt="Ikona Łóżek"
         />
@@ -55,7 +61,7 @@ const Description: React.FC<DescriptionDetailProps> = ({
         <DetailsCard
           classs={styles.numbersCard}
           description="Łazienki"
-          title="1"
+          title={amountBathrooms}
           icon={BathIcon}
           alt="Ikona Wanny"
         />

@@ -15,6 +15,9 @@ type ApartmentDetailProps = {
   airConditioner: boolean;
   sofa: boolean;
   description: string;
+  amountPeople: string;
+  amountBed: string;
+  amountBathrooms: string;
 };
 
 const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
@@ -24,6 +27,9 @@ const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
   airConditioner,
   description,
   sofa,
+  amountPeople,
+  amountBed,
+  amountBathrooms,
 }) => {
   return (
     <>
@@ -44,6 +50,9 @@ const ApartmentDetail: React.FC<ApartmentDetailProps> = ({
               airConditioner={airConditioner}
               description={description}
               sofa={sofa}
+              amountPeople={amountPeople}
+              amountBed={amountBed}
+              amountBathrooms={amountBathrooms}
             />
             <Reservation />
           </div>
