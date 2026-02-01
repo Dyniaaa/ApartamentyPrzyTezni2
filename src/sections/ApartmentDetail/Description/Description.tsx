@@ -154,7 +154,7 @@ const Description: React.FC<DescriptionDetailProps> = ({
               { icon: "/Icons/car.svg", text: "Parking prywatny" },
               { icon: "/Icons/ironingBoard.svg", text: "Żelazko i deska" },
               { icon: "/Icons/vacuumCleaner.svg", text: "Odkurzacz" },
-              { icon: "/Icons/cleaningSet.svg", text: "Rowery elektryczne" },
+              { icon: "/Icons/bicycle.svg", text: "Rowery elektryczne" },
             ]}
           />
         </div>
