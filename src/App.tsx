@@ -14,6 +14,7 @@ import Footer from "./components/Footer/Footer";
 import ApartmentDetail from "./pages/ApartmentDetail/ApartmentDetail";
 import ApartmentData from "./data/apartments.json";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<MainPage />} />
           <Route path="/Apartments" element={<Apartments />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
 
           {ApartmentData.map((apt, i) => (
             <Route

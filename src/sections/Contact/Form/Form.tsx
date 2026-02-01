@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Form.module.scss";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const Form: React.FC = () => {
   return (
@@ -87,11 +88,25 @@ const Form: React.FC = () => {
           rows={6}
           required
         />
+        <motion.span
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className={style.privacy}
+        >
+          Administratorem danych osobowych jest właściciel strony. Dane
+          przetwarzane są wyłącznie w celu udzielenia odpowiedzi na zapytanie.
+          Szczegóły znajdują się w
+          <span className={style.privacyLink}>
+            <NavLink to="/PrivacyPolicy"> polityce prywatności</NavLink>
+          </span>
+          .
+        </motion.span>
 
         <motion.button
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
           type="submit"
         >
           Wyślij wiadomość

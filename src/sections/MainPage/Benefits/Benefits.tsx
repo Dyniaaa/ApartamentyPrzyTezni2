@@ -39,7 +39,7 @@ const Benefits: React.FC = () => {
             classs={styles.detailsCard}
             icon={waterDrop}
             title="Przy tężni solankowej"
-            description="250m od leczniczej tężni - oddychaj zdrowiem"
+            description="400m od leczniczej tężni - oddychaj zdrowiem"
             alt="Ikona Kropli Wody"
           />
         </motion.li>

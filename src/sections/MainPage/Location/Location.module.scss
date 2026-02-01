@@ -22,20 +22,26 @@
     }
   }
 
-  .mapContainer {
-    width: 90%;
-    height: 100%;
+  .mapsContainerDiv {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(218, 218, 229);
-    border-radius: 8px;
-    padding: 2rem;
+    width: 90%;
+    justify-content: space-evenly;
+    height: 80%;
 
-    iframe {
-      width: 100%;
+    .mapContainer {
+      width: 45%;
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(218, 218, 229);
       border-radius: 8px;
+
+      .map {
+        width: 95%;
+        height: 95%;
+        border-radius: 8px;
+      }
     }
   }
 }

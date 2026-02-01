@@ -37,7 +37,7 @@ const Location: React.FC = () => {
             <ul>
               <li>
                 <img src={locationIcon} />
-                <p>50m do tężni solankowej</p>
+                <p>400m do tężni solankowej</p>
               </li>
               <li>
                 <img src={locationIcon} />

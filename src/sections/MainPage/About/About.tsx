@@ -39,7 +39,7 @@ const About: React.FC = () => {
             width={20}
             height={20}
           />
-          <p className={styles.iconText}>150m od Parku Zdrojowego</p>
+          <p className={styles.iconText}>150m od Zabytkowego Parku Zdrojowego</p>
         </div>
         <div>
           <img

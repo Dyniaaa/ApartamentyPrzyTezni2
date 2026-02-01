@@ -37,7 +37,7 @@ const Informations: React.FC = () => {
       >
         <img className={style.contactIcon} src={mailIcon} />
         <div>
-          <p>beata.sciubisz1977@gmail.com</p>
+          <p>ApartamentyPrzyTezni@gmail.com</p>
           <p className={style.moreInfo}>Odpowiadamy w ciągu 24h</p>
         </div>
       </motion.div>

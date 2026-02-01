@@ -30,6 +30,15 @@
       }
     }
 
+    .privacy {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+
+      .privacyLink {
+        text-decoration: underline;
+      }
+    }
+
     button {
       background-color: rgb(2, 29, 41);
       color: white;

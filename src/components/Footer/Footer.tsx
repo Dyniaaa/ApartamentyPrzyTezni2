@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             <p>Telefon: +48 508 500 886</p>
           </li>
           <li>
-            <p>Email: beata.sciubisz1977@gmail.com</p>
+            <p>Email: ApartamentyPrzyTezni@gmail.com</p>
           </li>
           <li>
             <p>Godziny: 8:00 - 20:00</p>

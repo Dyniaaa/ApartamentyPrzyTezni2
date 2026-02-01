@@ -7,21 +7,23 @@
   padding: 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: darken;
 
   h1 {
     font-weight: 400;
     font-size: 3rem;
+
+    &:first-of-type {
+      padding-top: 11rem;
+    }
   }
 }
 
-
 //Big phones and tablets
 
-@media (max-width: 768px) {}
-
+@media (max-width: 768px) {
+}
 
 //Phones
 
