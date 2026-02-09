@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./ApartmentGallery.module.scss";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,7 @@ type GalleryProps = {
 
 const ApartmentGallery: React.FC<GalleryProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const prevImage = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -21,6 +22,14 @@ const ApartmentGallery: React.FC<GalleryProps> = ({ images }) => {
     setCurrentIndex(id);
   };
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [open]);
+
   let timeDelay = 0.1;
 
   return (
@@ -33,7 +42,17 @@ const ApartmentGallery: React.FC<GalleryProps> = ({ images }) => {
       >
         <button onClick={prevImage}>&#10094;</button>
         <div className={styles.imageContainer}>
-          <img src={images[currentIndex]} alt={`Image ${currentIndex}`} />
+          <img
+            onClick={() => setOpen(true)}
+            src={images[currentIndex]}
+            alt={`Image ${currentIndex}`}
+            className={styles.image}
+          />
+          {open && (
+            <div className={styles.overlay} onClick={() => setOpen(false)}>
+              <img src={images[currentIndex]} className={styles.big} />
+            </div>
+          )}
         </div>
 
         <button onClick={nextImage}>&#10095;</button>

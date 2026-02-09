@@ -64,7 +64,7 @@
 
 //Big phones and tablets
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar {
     justify-content: space-between;
     padding: 0;
@@ -99,7 +99,7 @@
       align-items: center;
       background-color: white;
       padding: 2rem 0;
-      top: 100px;
+      top: 130px;
       width: 100%;
       margin: 0;
       border-bottom: 1px solid rgb(218, 218, 229);
@@ -124,10 +124,20 @@
 
 //Phones
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
     .logo {
+      height: 80%;
       width: 40%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    .logo {
+      width: 35%;
+      height: 60%;
     }
   }
 }

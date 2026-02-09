@@ -6,6 +6,7 @@
 
   .imageDiv {
     width: 100%;
+    max-height: 65vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -18,7 +19,8 @@
       border: 1px solid rgb(172, 172, 172);
       outline: none;
       cursor: pointer;
-      transition: background-color 0.2s ease-in-out,
+      transition:
+        background-color 0.2s ease-in-out,
         border-color 0.2s ease-in-out;
 
       &:hover {
@@ -32,9 +34,24 @@
       justify-content: center;
       width: 75%;
 
-      img {
+      .image {
         border-radius: 1rem;
-        height: 700px;
+        height: auto;
+        max-height: 60vh;
+      }
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        .big {
+          max-width: 90%;
+          max-height: 90%;
+        }
       }
     }
   }
@@ -57,7 +74,9 @@
         border-radius: 1rem;
         margin: 2rem 0.5rem 0 0.5rem;
         cursor: pointer;
-        transition: transform 0.1s ease, box-shadow 0.2s ease;
+        transition:
+          transform 0.1s ease,
+          box-shadow 0.2s ease;
       }
 
       .activeTile {
@@ -67,28 +86,22 @@
   }
 }
 
-
 @media (max-width: 1500px) {
   .apartmentGallery {
     .imageDiv {
-
       .imageContainer {
-
         img {
           height: 500px;
         }
       }
     }
-
   }
 }
 
 @media (max-width: 1100px) {
   .apartmentGallery {
     .imageDiv {
-
       .imageContainer {
-
         img {
           height: 300px;
         }
@@ -110,9 +123,7 @@
 @media (max-width: 700px) {
   .apartmentGallery {
     .imageDiv {
-
       .imageContainer {
-
         img {
           height: 200px;
         }
