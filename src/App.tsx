@@ -15,6 +15,7 @@ import ApartmentDetail from "./pages/ApartmentDetail/ApartmentDetail";
 import ApartmentData from "./data/apartments.json";
 import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import Bikes from "./pages/Bikes/Bikes";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<MainPage />} />
           <Route path="/Apartments" element={<Apartments />} />
+          <Route path="/Bikes" element={<Bikes />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
 

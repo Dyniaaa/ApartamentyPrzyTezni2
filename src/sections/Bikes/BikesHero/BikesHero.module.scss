@@ -1,0 +1,27 @@
+.bikesHero {
+  height: 70vh;
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("../../../assets/Apt - photos/rowery.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem;
+
+  .title {
+    font-size: 4rem;
+    color: white;
+
+    span {
+      color: #13e047;
+    }
+  }
+
+  .titleDescription {
+    font-size: 2rem;
+    color: rgb(214, 214, 214);
+  }
+}
