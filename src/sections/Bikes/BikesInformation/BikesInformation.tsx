@@ -61,7 +61,7 @@ const BikesInformation: React.FC = () => {
           />
         </div>
         <div className={styles.eBikeInfo}>
-          <h1 className={styles.eBikeTitle}>Nowoczesne e-bike'i</h1>
+          <h1 className={styles.eBikeTitle}>Nowoczesne e&#8209;bike'i</h1>
           <p className={styles.eBikeDescription}>
             Nasza flota składa się z najnowszych modeli rowerów elektrycznych,
             regularnie serwisowanych i przystosowanych do różnych typów tras.

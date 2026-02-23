@@ -70,3 +70,30 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .routes {
+    .routesContent {
+      display: flex;
+      flex-direction: column;
+
+      .imgDiv {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .routesList {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .routes {
+    .helpDiv {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
