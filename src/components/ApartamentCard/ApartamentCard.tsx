@@ -39,35 +39,37 @@ const ApartamentCard: React.FC<ApartamentCardProps> = ({
       transition={{ duration: 0.5, delay: delayTime }}
       className={styles.ApartamentCard}
     >
-      <div className={styles.photoDiv}>
-        <img className={styles.mainPhoto} src={photoUrl} alt={altPhoto} />
-      </div>
-      <div className={styles.titleDiv}>
-        <h1>{title}</h1>
-      </div>
-      <p className={styles.description}>{description}</p>
-      <div className={styles.iconsDiv}>
-        <div>
-          <img className={styles.icon} src={peopleIcon} alt="peopleIcon" />
-          <p>{amountPeople}&nbsp;gości</p>
+      <NavLink to={link} className={styles.cardLink}>
+        <div className={styles.photoDiv}>
+          <img className={styles.mainPhoto} src={photoUrl} alt={altPhoto} />
         </div>
-        <div>
-          <img className={styles.icon} src={bedIcon} alt="bedIcon" />
-          <p>{amountBed}&nbsp;sypialnia</p>
+        <div className={styles.titleDiv}>
+          <h1>{title}</h1>
         </div>
-        {sofa ? (
+        <p className={styles.description}>{description}</p>
+        <div className={styles.iconsDiv}>
           <div>
-            <img className={styles.icon} src={sofaIcon} alt="sofaIcon" />
-            <p>{amountBathrooms}&nbsp;sofa</p>
+            <img className={styles.icon} src={peopleIcon} alt="peopleIcon" />
+            <p>{amountPeople}&nbsp;gości</p>
           </div>
-        ) : null}
-        <div>
-          <img className={styles.icon} src={bathroomIcon} alt="bathroomIcon" />
-          <p>{amountBathrooms}&nbsp;łazienka</p>
+          <div>
+            <img className={styles.icon} src={bedIcon} alt="bedIcon" />
+            <p>{amountBed}&nbsp;sypialnia</p>
+          </div>
+          {sofa ? (
+            <div>
+              <img className={styles.icon} src={sofaIcon} alt="sofaIcon" />
+              <p>{amountBathrooms}&nbsp;sofa</p>
+            </div>
+          ) : null}
+          <div>
+            <img className={styles.icon} src={bathroomIcon} alt="bathroomIcon" />
+            <p>{amountBathrooms}&nbsp;łazienka</p>
+          </div>
         </div>
-      </div>
-      <NavLink className={styles.navLink} to={link}>
-        Zobacz szczegóły
+        <div className={styles.navLink}>
+          Zobacz szczegóły
+        </div>
       </NavLink>
     </motion.div>
   );
